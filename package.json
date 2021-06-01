@@ -1,0 +1,38 @@
+{
+  "name": "shaders",
+  "version": "1.0.0",
+  "description": "Educational repo for learning GLSL",
+  "main": "index.js",
+  "devDependencies": {
+    "css-loader": "^5.2.2",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "rimraf": "^3.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "three": "^0.129.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build:prod": "rimraf dist && webpack --config webpack.config.prod.js",
+    "watch": "webpack --watch",
+    "start": "webpack serve --port 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanhhua/shaders.git"
+  },
+  "keywords": [
+    "glsl"
+  ],
+  "author": "Khanh Hua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khanhhua/shaders/issues"
+  },
+  "homepage": "https://github.com/khanhhua/shaders#readme"
+}
